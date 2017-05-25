@@ -14,6 +14,9 @@ Currently the app does not support custom filename formats, and defaults to the 
 
 2015-10-31-16h06m12.mp4
 
+## Version 0.1
+
+![Kontrol main window](./doc/screenshot-01.png)
 
 ## License
     
