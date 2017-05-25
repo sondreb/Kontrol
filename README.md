@@ -32,6 +32,28 @@ npm start
 
 This will first install all the dependencies, and then launch the app.
 
+## Package the app
+
+Looking into packaging using "asar" package, details here: [https://electron.atom.io/docs/tutorial/application-packaging/](https://electron.atom.io/docs/tutorial/application-packaging/).
+
+Install [Yarn](https://yarnpkg.com/) which minimizes node_modules content: 
+
+Run inside the "app" folder:
+
+```
+yarn install
+
+yarn clean
+```
+
+Then run from the root folder:
+
+```
+npm run package
+```
+
+TODO: Start using the electron-builder, for auto-update support: [https://github.com/electron-userland/electron-builder](https://github.com/electron-userland/electron-builder)
+
 
 ## Dependencies
 

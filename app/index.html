@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kontrol</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <style>
+    html,
+    body {}
+
+    .toolbar {
+      -webkit-app-region: drag;
+      height: 100px;
+      background-color: silver;
+    }
+
+    #exit-button {
+      -webkit-app-region: no-drag;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+
+    <button id="exit-button">Exit</button>
+
+  </div>
+
+  <h1>Kontrol</h1>
+
+  <button id="openFolder">Choose Folder</button>
+
+  <p>Files will be renamed as soon as you close the dialog.</p>
+
+  <!-- All of the Node.js APIs are available in this renderer process. -->
+  <!--We are using Node.js <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.-->
+  <br>
+
+</body>
+<script>
+  // You can also require other files to run in this process
+  require('./renderer.js')
+
+</script>
+
+</html>

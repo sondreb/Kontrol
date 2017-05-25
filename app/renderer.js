@@ -9,25 +9,40 @@ var path = require('path');
 var glob = require('glob');
 
 const electron = require('electron');
-const ipc = electron.ipcRenderer;
+//const ipc = electron.ipcRenderer;
+//var ipc = require('ipc');
+
+// In renderer process (web page).
+const {ipcRenderer} = require('electron')
+
+//console.log(ipcRenderer.sendSync('synchronous-message', 'ping')) // prints "pong"
+// ipcRenderer.on('asynchronous-reply', (event, arg) => {
+//   console.log(arg) // prints "pong"
+// })
 
 const remote = electron.remote;
 const mainProcess = remote.require('./main');
 
 const $ = require('jquery');
 
-ipc.on('file-opened', function (event, file, content) {
-    console.log(content);
-});
+// ipc.on('file-opened', function (event, file, content) {
+//     console.log(content);
+// });
 
 //const $markdownView = $('.raw-markdown');
 //const $htmlView = $('.rendered-html');
 const $openFileButton = $('#openFolder');
+const $exitButton = $('#exit-button');
 //const $saveFileButton = $('#save-file');
 //const $copyHtmlButton = $('#copy-html');
 
 $openFileButton.on('click', () => {
   mainProcess.openFile();
+});
+
+$exitButton.on('click', () => {
+  ipcRenderer.send('close-main-window', 'ok');
+  console.log('Message sent!!');
 });
 
 

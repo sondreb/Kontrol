@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ./app",
-    "package": "electron-packager ./app Kontrol --out ./dist --overwrite --arch=ia32 --icon=./app/favicon.ico"
+    "package": "electron-packager ./ Kontrol --out ./dist --overwrite --arch=ia32 --icon=./app/favicon.ico"
   },
   "keywords": [
     "photos",
@@ -19,8 +19,10 @@
   ],
   "author": "Sondre Bjellås",
   "license": "MIT",
-  "devDependencies": {
-    "electron": "1.6.8",
-    "electron-packager": "8.7.0"
+  "dependencies": {
+    "exiftool": "0.0.3",
+    "glob": "7.1.2",
+    "jquery": "3.2.1",
+    "moment": "2.18.1"
   }
 }
