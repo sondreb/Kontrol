@@ -77,7 +77,7 @@ function parseDate(date) {
     m = moment(date, 'YYYY:MM:DD HH:mm:ss');
   }
 
-  return m.format('YYYY-MM-DD HH[h]mm[m]ss');
+  return m.format('YYYY-MM-DD-HH[h]mm[m]ss');
 }
 
 function getFileName(extension, date, counter) {
@@ -112,7 +112,7 @@ const openFile = function openFile() {
       console.log(folderPaths);
 
       //var filteredPath = path.join(folderPaths[0], '*.{mp4,MP4}');
-      var filteredPath = path.join(folderPaths[0], '*.{mp4,MP4}');
+      var filteredPath = path.join(folderPaths[0], '*.{mp4,MP4,mov,MOV}');
       filteredPath = path.normalize(filteredPath);
       console.log(filteredPath);
 
