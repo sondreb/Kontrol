@@ -1,4 +1,4 @@
-# Kontrol
+# <img align="center" width="128" height="128" src="./res/kontrol-logo-128x128.png"> Kontrol
 
 App that helps you organize your media files.
 
@@ -74,7 +74,7 @@ no warranty. Make sure you take backups before using Kontrol. While great care i
 
 ### Version 0.1
 
-![Kontrol main window](./doc/screenshot-01.png)
+![Kontrol main window](./res/screenshot-01.png)
 
 ## License
     
