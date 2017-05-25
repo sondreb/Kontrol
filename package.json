@@ -1,0 +1,31 @@
+{
+  "name": "kontrol",
+  "version": "1.0.0",
+  "description": "Use Kontrol to organize your media",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [
+    "photos",
+    "media",
+    "videos",
+    "mp4",
+    "jpg",
+    "png",
+    "images"
+  ],
+  "author": "Sondre Bjellås",
+  "license": "MIT",
+  "dependencies": {
+    "exiftool": "0.0.3",
+    "glob": "^7.1.2",
+    "jquery": "^3.2.1",
+    "moment": "^2.18.1",
+    "mp4js": "0.0.2"
+  },
+  "devDependencies": {
+    "electron": "1.6.8"
+  }
+}
