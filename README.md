@@ -43,6 +43,11 @@ This will first install all the dependencies, and then launch the app.
 
 Kontrol supports only Windows at the moment, but support for Linux and OS X is planned in the future.
 
+## Disclaimer
+
+Any operations on the file system is prone to problems. Using Kontrol is done under
+no warranty. Make sure you take backups before using Kontrol. While great care is taken to avoid problems, you are using the app under your own risk.
+
 ## Screenshots
 
 ### Version 0.1
